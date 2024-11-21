@@ -26,7 +26,7 @@ export const scheduleAutomation = (): void => {
   console.log("Starting content automation scheduler...");
 
   // Morning schedule (11:03 AM)
-  schedule.scheduleJob("48 11 * * *", () => generateAndPostContent(5));
+  schedule.scheduleJob("0 8 * * *", () => generateAndPostContent(5));
 
   // Afternoon schedule (1:00 PM)
   schedule.scheduleJob("0 13 * * *", () => generateAndPostContent(5));
